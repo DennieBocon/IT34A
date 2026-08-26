@@ -6,11 +6,11 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 // Application URL
-define('BASE_URL', 'http://localhost/it34a');
+define('BASE_URL', 'http://localhost/IT34A');
 
 // Database configuration
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'it34a');
+define('DB_NAME', 'IT34A');
 define('DB_USER', 'root');
 define('DB_PASS', '');
 
