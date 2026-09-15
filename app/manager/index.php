@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+</head>
+<body>
+    <h1>HELLO ADMIN</h1>
+    <a href="/IT34A/app/auth/signout.php">SIGN OUT</a>
+
+</body>
+</html>

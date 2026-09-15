@@ -29,14 +29,17 @@ function loginUser($pdo, $login, $password)
 
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
 
+    // User not found
     if (!$user) {
         return false;
     }
 
+    // Plain text password comparison
     if ($password !== $user['user_password']) {
         return false;
     }
 
+    // Save user information in session
     $_SESSION['user_id'] = $user['user_id'];
     $_SESSION['user_email'] = $user['user_email'];
     $_SESSION['user_username'] = $user['user_username'];
