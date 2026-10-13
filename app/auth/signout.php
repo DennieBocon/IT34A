@@ -1,8 +1,13 @@
 <?php
 
-session_start();
+require_once __DIR__ . '/../../config/config.php';
 
-session_unset();
+if (isset($_SESSION['user_id']) && isset($_SESSION['session_id'])) {
+    endUserSession($pdo);
+}
+
+$_SESSION = [];
+
 session_destroy();
 
 header("Location: /IT34A/index.php");

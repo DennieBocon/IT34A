@@ -2,7 +2,10 @@
 session_start();
 
 // Load activity logger
-require_once __DIR__ . '/../includes/activity-logger.php';
+require_once __DIR__ . '/../functions/activity.php';
+require_once __DIR__ . '/../functions/auth.php';
+require_once __DIR__ . '/../functions/redirect.php';
+require_once __DIR__ . '/../functions/sessions.php';
 
 
 // Application URL
