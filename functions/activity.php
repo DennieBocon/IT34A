@@ -119,7 +119,7 @@ function logActivity(
                 : PDO::PARAM_STR
         );
 
-        // User agent
+        // user agent
         $stmt->bindValue(
             ':user_agent',
             $user_agent,
