@@ -13,7 +13,7 @@ $error = '';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    requiredCsrfToken();
+   
     $login = trim($_POST['login'] ?? '');
     $password = $_POST['password'] ?? '';
 
